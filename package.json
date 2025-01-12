@@ -39,6 +39,7 @@
     "@tarojs/components": "4.0.8",
     "@tarojs/helper": "4.0.8",
     "@tarojs/plugin-framework-vue3": "4.0.8",
+    "@tarojs/plugin-html": "^4.0.8",
     "@tarojs/plugin-platform-alipay": "4.0.8",
     "@tarojs/plugin-platform-h5": "4.0.8",
     "@tarojs/plugin-platform-harmony-hybrid": "4.0.8",
@@ -50,6 +51,7 @@
     "@tarojs/runtime": "4.0.8",
     "@tarojs/shared": "4.0.8",
     "@tarojs/taro": "4.0.8",
+    "lodash": "^4.17.21",
     "vue": "^3.0.0"
   },
   "devDependencies": {
