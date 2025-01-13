@@ -2,6 +2,10 @@
 import { createApp } from 'vue'
 
 import './app.css'
+import Taro from "@tarojs/taro";
+
+Taro.addInterceptor(Taro.interceptors.logInterceptor)
+Taro.addInterceptor(Taro.interceptors.timeoutInterceptor)
 
 const App = createApp({
   // 可以使用所有的 Vue 生命周期方法

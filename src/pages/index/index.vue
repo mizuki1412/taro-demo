@@ -14,17 +14,16 @@ import Taro from '@tarojs/taro'
 import {request} from "../../lib/request";
 
 useReady(()=>{
-  console.log(223)
+
 })
 
 // { path: '', params: { ... } }
 const route = useRouter()
 
-const msg = ref('Hello world2 7 ')
+const msg = ref('Hello world2 72 ')
 
 async function handle(){
-  console.log(new Date(), msg.value)
-  let res = await request("/rest/audio/login", {username: "abs"}, {throwable: false})
+  let res = await request("/demo/post/e", {phone: "abs"},)
   console.log(res)
 }
 </script>
