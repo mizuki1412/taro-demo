@@ -27,7 +27,8 @@
     "dev:rn": "npm run build:rn -- --watch",
     "dev:qq": "npm run build:qq -- --watch",
     "dev:jd": "npm run build:jd -- --watch",
-    "dev:harmony-hybrid": "npm run build:harmony-hybrid -- --watch"
+    "dev:harmony-hybrid": "npm run build:harmony-hybrid -- --watch",
+    "postinstall": "weapp-tw patch"
   },
   "browserslist": [
     "defaults and fully supports es6-module",
@@ -36,6 +37,7 @@
   "author": "",
   "dependencies": {
     "@babel/runtime": "^7.24.4",
+    "@nutui/nutui-taro": "^4.3.13",
     "@tarojs/components": "4.0.8",
     "@tarojs/helper": "4.0.8",
     "@tarojs/plugin-framework-vue3": "4.0.8",
@@ -52,24 +54,35 @@
     "@tarojs/shared": "4.0.8",
     "@tarojs/taro": "4.0.8",
     "lodash": "^4.17.21",
+    "qs": "^6.13.1",
     "vue": "^3.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.24.4",
     "@babel/plugin-proposal-class-properties": "7.14.5",
+    "@nutui/auto-import-resolver": "^1.0.0",
     "@tarojs/cli": "4.0.8",
-    "@tarojs/plugin-framework-react": "^4.0.8",
-    "@tarojs/vite-runner": "4.0.8",
-    "@vitejs/plugin-vue": "^5.0.4",
-    "@vitejs/plugin-vue-jsx": "^3.1.0",
+    "@tarojs/taro-loader": "4.0.8",
+    "@tarojs/test-utils-vue3": "^0.1.1",
+    "@tarojs/webpack5-runner": "4.0.8",
+    "@types/node": "^18",
+    "@types/webpack-env": "^1.13.6",
+    "@vue/babel-plugin-jsx": "^1.2.2",
+    "@vue/compiler-sfc": "^3.0.0",
+    "autoprefixer": "^10.4.20",
     "babel-preset-taro": "4.0.8",
+    "css-loader": "^7.1.1",
     "eslint": "^8.57.0",
     "eslint-config-taro": "4.0.8",
     "eslint-plugin-vue": "^9.17.0",
-    "postcss": "^8.4.38",
+    "postcss": "^8.5.1",
+    "style-loader": "^3.3.4",
     "stylelint": "^16.4.0",
-    "terser": "^5.30.4",
-    "vite": "^4.2.0"
+    "tailwindcss": "^3.4.17",
+    "unplugin-vue-components": "^28.0.0",
+    "vue-loader": "^17.4.2",
+    "weapp-tailwindcss": "^3.7.0",
+    "webpack": "5.94.0"
   },
   "packageManager": "yarn@4.6.0+sha512.5383cc12567a95f1d668fbe762dfe0075c595b4bfff433be478dbbe24e05251a8e8c3eb992a986667c1d53b6c3a9c85b8398c35a960587fbd9fa3a0915406728"
 }
