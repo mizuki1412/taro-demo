@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* 修改nut的默认css */
+page {
+  --nut-primary-color: #04d14c;
+  --nut-primary-color-end: #fa6419;
+}
