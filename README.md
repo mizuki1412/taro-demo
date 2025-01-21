@@ -1,11 +1,20 @@
 
 # taro demo
 
+npm i --force
+
+npm run dev:weapp
+
+## 结构
+
+- config: 编译配置
+- src/lib: 公共库
+- src/pages
+- src/app.js: 入口
+
 ## TODO
 
 - tailwind的开发工具提示
-- 菜单栏配置
-- color 体系
 
 ## 问题 
 

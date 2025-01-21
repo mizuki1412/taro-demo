@@ -39,7 +39,14 @@ export default defineConfig(async (merge, { command, mode }) => {
       options: {},
     },
     framework: 'vue3',
-    compiler: 'webpack5',
+    // todo https://github.com/NervJS/taro/issues/13456 nut-icon 引入后有问题
+    compiler: {
+      type: 'webpack5',
+      prebundle: {
+        enable: true,
+        exclude: ['@nutui/nutui-taro', '@nutui/icons-vue-taro']
+      }
+    },
     cache: {
       enable: false // Webpack 持久化缓存配置，建议开启。默认配置请参考：https://docs.taro.zone/docs/config-detail#cache
     },

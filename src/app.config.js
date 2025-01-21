@@ -2,6 +2,8 @@ export default defineAppConfig({
   pages: [
     'pages/index/index',
     'pages/page1/page1',
+    'pages/page2/page2',
+    'pages/page3/page3',
   ],
   tabBar: {
     // custom: true,
@@ -12,12 +14,26 @@ export default defineAppConfig({
       {
         pagePath: 'pages/index/index',
         text: '首页',
-        iconPath: '',
-        selectedIconPath: ''
+        iconPath: 'assets/icon/home.png',
+        selectedIconPath: 'assets/icon/home.png',
       },
       {
         pagePath: 'pages/page1/page1',
-        text: 'p1',
+        text: '看看',
+        iconPath: 'assets/icon/page1.png',
+        selectedIconPath: 'assets/icon/page1.png',
+      },
+      {
+        pagePath: 'pages/page2/page2',
+        text: '消息',
+        iconPath: 'assets/icon/message.png',
+        selectedIconPath: 'assets/icon/message.png',
+      },
+      {
+        pagePath: 'pages/page3/page3',
+        text: '用户',
+        iconPath: 'assets/icon/user.png',
+        selectedIconPath: 'assets/icon/user.png',
       },
     ],
   },

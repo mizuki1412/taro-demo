@@ -77,7 +77,7 @@ export async function request(url, data, config = {headers:{}, method: 'POST', a
     }
   })
   let res = await requestTask
-  if(res.statusCode!==200 || res.data['status']!==RequestConfig.defaultCodeSuccess){
+  if(res.statusCode!==200 || res.data[RequestConfig.defaultKeyCode]!==RequestConfig.defaultCodeSuccess){
     if(RequestConfig.errorHandle){
       RequestConfig.errorHandle(res, url, config)
     }
