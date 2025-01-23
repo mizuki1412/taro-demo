@@ -1,6 +1,6 @@
 <template>
   <div class="index">
-    <div>page3</div>
+    <div class="mb-1 ">page3</div>
     <Button color="primary" @tap="click">主要按钮</Button>
   </div>
 </template>
